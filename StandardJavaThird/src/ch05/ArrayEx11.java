@@ -1,5 +1,9 @@
 package ch05;
 
+/**
+ * @author zxcv5500
+ * 특정 배열 안에 같은 값이 몇번 들어있는지 세보는 로직처리
+ */
 class ArrayEx11 {
 
 	public static void main(String[] args) {
