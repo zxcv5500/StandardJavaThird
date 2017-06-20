@@ -2,7 +2,7 @@ package ch05;
 
 import java.util.Arrays;
 
-class ArrayEx9 {
+class ArrayEx09 {
 
 	public static void main(String[] args) {
 		int[] code = { -4, -1, 3, 6, 11 };		// 불연속적인 값들로 구성된 배열

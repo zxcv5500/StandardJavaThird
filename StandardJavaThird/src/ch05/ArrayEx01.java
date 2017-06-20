@@ -1,6 +1,6 @@
 package ch05;
 
-class ArrayEx1 {
+class ArrayEx01 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

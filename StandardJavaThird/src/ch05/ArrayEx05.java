@@ -1,6 +1,6 @@
 package ch05;
 
-class ArrayEx5 {
+class ArrayEx05 {
 
 	public static void main(String[] args) {
 		int sum = 0;				// 총점을 저장하기 위한 변수

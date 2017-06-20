@@ -6,7 +6,7 @@ import java.util.Iterator;
  * @author zxcv5500
  * 배열을 뒤섞는 코드 작성.
  */
-class ArrayEx7 {
+class ArrayEx07 {
 
 	public static void main(String[] args) {
 		int[] numArr = new int[10];

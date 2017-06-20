@@ -1,6 +1,6 @@
 package ch05;
 
-class ArrayEx4 {
+class ArrayEx04 {
 
 	public static void main(String[] args) {
 		char[] abc = { 'A', 'B', 'C', 'D'};
