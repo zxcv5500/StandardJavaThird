@@ -11,7 +11,7 @@ class ArrayEx10 {
 		
 		System.out.println();
 		
-		for (int i = 0; i < numArr.length; i++) {
+		for (int i = 0; i < numArr.length-1; i++) {
 			boolean changed = false;		//자리 바꿈이 발생했는지 체크한다.
 			
 			for (int j = 0; j < numArr.length-1-i ; j++) {
