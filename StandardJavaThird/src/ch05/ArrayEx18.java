@@ -22,8 +22,13 @@ public class ArrayEx18 {
 			}
 		}
 		
-		for (int[] tmp : score) {
-			for (int i : tmp) {
+		/*
+		 * for (int i : score) {		// 에러. 2차원배열 score의 각 요소는 1차원배열
+		 *     sum += i;
+		 * }
+		*/
+		for (int[] tmp : score) {		// score의 각 요소(1차원 배열 주소)를 tmp에 저장
+			for (int i : tmp) {			// tmp는 1차원배열을 가리키는 참조변수
 				sum += i;
 			}
 		}
