@@ -15,7 +15,8 @@ class Tv {
 
 
 /**
- * Tv클래스로부터 인스턴스를 생성하고 인스턴스의 속성(channel)과 메서드(channelDown())를 사용하는 방법을 보여주는 코드
+ * Tv클래스로부터 인스턴스를 생성하고 
+ * 인스턴스의 속성(channel)과 메서드(channelDown())를 사용하는 방법을 보여주는 코드
  * @author zxcv5500
  *
  */
