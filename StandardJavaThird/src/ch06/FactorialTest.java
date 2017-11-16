@@ -16,6 +16,8 @@ public class FactorialTest {
 	static int factorial(int n) {
 		int result = 0;
 		
+		if (n <= 0 || n > 12) return -1;		// 매개변수 n의 유효성 검사를 추가 매개 변수 n의 상한을 12로 정한 이유는
+												// int의 최대값(약20억)보다 크기 때문이다.
 		if ( n == 1) {
 			result =1;
 		} else {
