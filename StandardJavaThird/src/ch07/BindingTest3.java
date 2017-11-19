@@ -13,17 +13,18 @@ class BindingTest3 {
 	public static void main(String[] args) {
 		Parent05 p = new Child05();
 		Child05 c = new Child05();
-		Parent05 p2 = new Parent05();
+		// Parent05 p2 = new Parent05();
 		
 		System.out.println("p.x = " + p.x);
 		p.method();
 		System.out.println();
 		System.out.println("c.x = " + c.x);
 		c.method();
-		
+		/*//
 		System.out.println();
 		System.out.println("p2.x = " + p2.x);
 		p2.method();
+		*/
 	}
 
 }
