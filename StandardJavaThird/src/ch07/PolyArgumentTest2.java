@@ -68,6 +68,7 @@ class Buyer04 {										// 고객, 물건을 사는 사람
 			if ( item[i] == null) break;
 			sum += item[i].price;
 			itemList += item[i] + ", ";
+			// itmeList += ( i == 0 ) ? item[i] : ", " + item[i]; 		// 구입하신 제품은 Tv04, Computer04, Audio04, 입니다. 마지막 , 부분이 깔끔하지 않다고 생각되면 다음과 같이 처리
 		}
 		
 		System.out.println("구입하신 물품의 총금액은 " + sum + "만원입니다.");
