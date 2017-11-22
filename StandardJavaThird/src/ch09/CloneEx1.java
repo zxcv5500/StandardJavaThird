@@ -15,9 +15,11 @@ class Point implements Cloneable {		// Cloneable 인터페이스를 구현한다
 	
 	/* (non-Javadoc)
 	 * @see java.lang.Object#clone()
-	 * clone()메소드 오버라이딩 
+	 * clone()메소드 오버라이딩
+	 * 1.5부터 추가된 공변 반환타입 적용 코드
+	 * 조상 메소드의 반환타입을  자식 클래스타입으로 반환하도록 허용한다. 
 	 */
-	public Object clone() {
+	public Point clone() {
 		Object obj = null;
 		try {
 			obj = super.clone();		// clone()은 반드시 예외처리를 해주어야 한다.
@@ -25,7 +27,7 @@ class Point implements Cloneable {		// Cloneable 인터페이스를 구현한다
 			
 		}
 		
-		return obj;
+		return (Point) obj;
 	}
 }
 
