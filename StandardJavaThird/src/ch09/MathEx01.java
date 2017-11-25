@@ -32,7 +32,8 @@ class MathEx01 {
 		
 		//* 음수 반올림, 올림, 버
 		out.printf("round(%3.1f)=%d%n", -1.5, round(-1.5));					// 반올림
-		out.printf("rind(%3.1f)=%f%n", -1.5, rint(-1.5));					// 반올림 - 반환값이 더블로 반환됨
+		out.printf("rint(%3.1f)=%f%n", -1.5, rint(-1.5));					// 반올림 - 반환값이 더블로 반환됨 실수의 반올림은 0.4이하일 때 반올림이 된다.
+//		out.printf("rint(%3.1f)=%f%n", -1.4, rint(-1.4));
 		out.printf("ceil(%3.1f)=%f%n", -1.5, ceil(-1.5));					// 올림
 		out.printf("floor(%3.1f)=%f%n", -1.5, floor(-1.5));					// 버림
 		//*/
