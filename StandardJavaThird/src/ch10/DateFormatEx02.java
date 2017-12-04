@@ -8,7 +8,7 @@ import java.util.Date;
  * @author sharpen
  * Date제품만 format메서드에 사용될 수 있기 때문에 Calendar -> Date제품으로 변환하는 방법을 보여주는 예제.
  */
-class DateFormatEx2 {
+class DateFormatEx02 {
 
 	public static void main(String[] args) {
 		// Calendar와 Date 간의 변환은 다음과 같이 한다.
