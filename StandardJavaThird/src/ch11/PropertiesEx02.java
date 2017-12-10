@@ -6,7 +6,8 @@ import java.util.Properties;
 
 /**
  * @author zxcv5500
- * 외부파일(input.txt)로 부터 데이터를 입력받아서 계산결과를 보여주는 에제이다.
+ * 외부파일(input.txt)로 부터 데이터를 입력받아서 계산결과를 보여주는 예제이다.
+ * 터미널 창 명령어 : java PropertiesEx02 input.txt
  */
 class PropertiesEx02 {
 
