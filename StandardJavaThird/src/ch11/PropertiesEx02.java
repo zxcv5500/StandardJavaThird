@@ -30,6 +30,12 @@ class PropertiesEx02 {
 		}
 		
 		String name = prop.getProperty("name");
+		//String name = prop.getProperty("name");					// 한글이 깨져보일 수 있어서 다음과 같이 처리한다.
+		
+//		try {
+//			name = new String(name.getBytes("8859_1"), "EUC-KR");
+//		} catch (Exception e) { }
+	
 		String[] data = prop.getProperty("data").split(",");
 		int max = 0;
 		int min = 0;
