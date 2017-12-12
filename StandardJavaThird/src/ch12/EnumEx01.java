@@ -4,9 +4,12 @@ package ch12;
  * @author sharpen
  * 열거형을 직접 정의하고 사용해본 예제
  */
+
+enum Direction { EAST, SOUTH, WEST, NORTH }
+
 class EnumEx01 {
 	
-	enum Direction { EAST, SOUTH, WEST, NORTH }
+	
 	
 	
 	public static void main(String[] args) {
