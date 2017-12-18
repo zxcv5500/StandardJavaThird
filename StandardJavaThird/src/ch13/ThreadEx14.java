@@ -10,13 +10,15 @@ class ThreadEx14_01 extends Thread {
 		
 		while (i !=0 && !isInterrupted()) {
 			System.out.println(i--);
+			
+			try {
+				Thread.sleep(1000);				// 1초 지연
+			} catch (InterruptedException e) {
+//				interrupt();		// Thread.sleep(1000)에 InterruptedException 예외가 발생하기 때문에 이 코드를 써야만 제대로 동작한다. 
+			}
 		}
 		
-		try {
-			Thread.sleep(1000);				// 1초 지연
-		} catch (InterruptedException e) {
-//			interrupt();		Thread.sleep()에 InterruptedException 예외가 발생하기 때문에 이 코드를 써야만 제대로 동작한다. 
-		}
+
 		
 		System.out.println("카운트가 종료되었습니다.");
 	}
