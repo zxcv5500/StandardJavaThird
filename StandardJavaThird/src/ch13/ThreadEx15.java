@@ -1,0 +1,48 @@
+package ch13;
+
+class RunImplEx15 implements Runnable {
+
+	@Override
+	public void run() {
+		while (true) {
+			System.out.println(Thread.currentThread().getName());
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {}
+		}
+	}
+	
+}
+
+/**
+ * @author zxcv5500
+ * Thread의 suspend(), resume() 교착 상태에 빠질 수 있는 메소드들이라 deprecated되었다. stop()사용법을 보여주는 예제. 
+ */
+class ThreadEx15 {
+
+	public static void main(String[] args) {
+		RunImplEx15 r = new RunImplEx15();
+		Thread th1 = new Thread(r, "*");
+		Thread th2 = new Thread(r, "**");
+		Thread th3 = new Thread(r, "***");
+		
+		th1.start();
+		th2.start();
+		th3.start();
+		
+		try {
+			Thread.sleep(2000);
+			th1.suspend();			// 쓰레드 th1을 잠시 중단 시킨다.
+			Thread.sleep(2000);
+			th2.suspend();
+			Thread.sleep(3000);
+			th1.resume();			// 쓰레드 th1을 다시 동작 시킨다.
+			Thread.sleep(3000);		
+			th1.stop(); 			// 쓰레드 th1을 강제로 종료시킨다.
+			th2.stop();
+			Thread.sleep(2000);
+			th3.stop();
+		} catch (InterruptedException e) {}
+	}
+
+}
