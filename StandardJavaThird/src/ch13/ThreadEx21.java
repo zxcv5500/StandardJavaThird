@@ -23,11 +23,14 @@ class Account {
 		return balance;
 	}
 	
-	public void withdraw(int money) {
-		if (balance >= money) {
-			try { Thread.sleep(1000); } catch (InterruptedException e){}
-			balance -= money;
-		}
+	public /* synchronized */ void withdraw(int money) {					// 메소드에 임계영역을 다는 경
+		//synchronized(this) {				// 임계 블록 설정하는 경우
+			if (balance >= money) {
+				try { Thread.sleep(1000); } catch (InterruptedException e){}
+				balance -= money;
+			}
+		//}
+		
 	}
 }
 
