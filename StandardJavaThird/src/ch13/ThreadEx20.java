@@ -12,6 +12,9 @@ class ThreadEx20_01 extends Thread {
 			} catch (InterruptedException e) {
 				System.out.println("Awaken by interrupt()");
 			}
+			
+			gc();
+			System.out.println("Garbage Collected. Free Memory : " + freeMemory());
 		}
 	}
 	
@@ -28,8 +31,7 @@ class ThreadEx20_01 extends Thread {
 	
 	public int freeMemory() {
 		return MAX_MEMORY - usedMemory;
-	}
-	
+	}	
 	
 }
 
@@ -53,6 +55,7 @@ class ThreadEx20 {
 			// 사용했을 경우 gc를 깨운다.
 			if (gc.freeMemory() < requiredMemory || gc.freeMemory() < gc.totalMemory() * 0.4) {
 				gc.interrupt();			// 잠자고 있는 쓰레드 gc를 깨운다.
+				
 			}
 			
 			gc.usedMemory += requiredMemory;
