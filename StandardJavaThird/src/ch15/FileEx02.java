@@ -5,6 +5,7 @@ import java.io.File;
 /**
  * @author sharpen
  * args 경로로 디렉토 경로를 주고 그 경로를 기준으로 File객체를 생성한다. 없으면 프로그램을 종료시키고.
+ * 지정한 디렉토리(폴더)에 포함된 파일과 디렉토리의 목록을 보여주는 예제
  * 
  */
 class FileEx02 {
