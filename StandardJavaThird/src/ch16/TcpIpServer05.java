@@ -29,7 +29,7 @@ public class TcpIpServer05 {
 			sender.start();
 			receiver.start();
 		} catch (Exception e) {
-			// TODO: handle exception
+			
 		}
 	}
 
@@ -68,7 +68,7 @@ class Receiver extends Thread {
 		try {
 			in = new DataInputStream(socket.getInputStream());
 		} catch (IOException e) {
-			// TODO: handle exception
+			
 		}
 	}
 	

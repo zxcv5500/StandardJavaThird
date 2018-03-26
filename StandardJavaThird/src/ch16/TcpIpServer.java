@@ -47,7 +47,7 @@ class TcpIpServer {
 				socket.close();
 				
 			} catch (IOException e) {
-				// TODO: handle exception
+				
 			}
 		}
 	}

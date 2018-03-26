@@ -23,11 +23,11 @@ class TcpIpClient05 {
 			sender.start();
 			receiver.start();
 		} catch (ConnectException e) {
-			// TODO: handle exception
+			
 		} catch (IOException e) {
-			// TODO: handle exception
+			
 		} catch (Exception e) {
-			// TODO: handle exception
+			
 		}
 
 	}

@@ -30,7 +30,7 @@ public class TcpIpMultichatClient {
 			receiver.start();
 			
 		} catch (Exception e) {
-			// TODO: handle exception
+			
 		}
 
 	}
@@ -78,7 +78,7 @@ public class TcpIpMultichatClient {
 				try {
 					System.out.println(in.readUTF());
 				} catch (IOException e) {
-					// TODO: handle exception
+					
 				}
 			}
 		}
